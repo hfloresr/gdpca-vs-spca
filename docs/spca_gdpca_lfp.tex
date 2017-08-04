@@ -1,0 +1,106 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+
+
+\usepackage{cite}
+\usepackage[cmex10]{amsmath}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{tikz}
+\usetikzlibrary{shapes, shadows, arrows}
+\usepackage{url}
+\usepackage{natbib}
+
+\usepackage{hyperref}
+
+\usepackage{graphicx}
+\graphicspath{figs/}
+\usepackage[export]{adjustbox}
+
+\usepackage{float}
+\usepackage{stfloats}
+\usepackage{wrapfig}
+
+\usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry}
+
+
+\begin{document}
+\date{}
+\def\spacingset#1{\renewcommand{\baselinestretch}%
+{#1}\small\normalsize} \spacingset{1}
+
+
+\title{\bf Needs title}
+\author{Altyn Zhelambayeva\footnote{Department of Computer Science, School of Science and Technology, Nazarbayev University, Astana, Kazakhstan; \texttt{altyn.zhelambayeva@nu.edu.kz}}, Hector G. Flores Rodriguez\footnote{Department of Computer Science, University of California, Irvine, CA 92697, USA; \texttt{hfloresr@uci.edu}}, Hernando Ombao\footnote{Computer, Electrical and Mathematical Sciences and Engineering Division, King Abdullah University of Science and Technology, Thuwal 23955, Saudi Arabia; \texttt{hernando.ombao@kaust.edu.sa}}}
+\maketitle
+
+
+\bigskip
+\begin{abstract}
+TODO: Abstract
+\end{abstract}
+
+\noindent%
+{\it Keywords:} Dimensionality reduction; PCA; Time series
+\vfill
+
+
+\newpage
+\spacingset{2} % DON'T change the spacing!
+\section{Introduction} \label{sec:intro}
+TODO: Intro
+
+
+\section{Methods} \label{sec:methods}
+Here we can talk about dimensionality reduction for LFP signals and the proposed methods of SPCA and GDPCA. Here we can introduce that we are comparing SPCA vs different lags of GDPCA.
+
+
+\subsection{SPCA} \label{sec:spca}
+\begin{itemize}
+\item Breif description of SPCA and reference to paper
+\item Factors of SPCA with LFP superimposed
+\end{itemize}
+
+
+
+\subsection{GDPCA} \label{sec:gdpca}
+\begin{itemize}
+\item  Description of GDPCA and reference to paper
+\item Factors of GDPCA with LFP superimposed
+\end{itemize}
+
+
+
+\section{Results} \label{sec:results}
+A couple of sentences to introduce our results
+
+\subsection{Log Periodograms} \label{sec:lp}
+\begin{itemize}
+\item Compare log periodograms pre
+\item Compare log periodograms post
+\end{itemize}
+
+\subsection{Functional Boxplots} \label{sec:fb}
+\begin{itemize}
+\item Introduce functional boxplots with references to papers
+\item Compare functional boxplots and medians pre
+\item Compare functional boxplots and medians post
+\item Compare functional medians pre
+\end{itemize}
+
+
+\subsection{Signal Reconstruction and MSE} \label{sec:mse}
+\begin{itemize}
+\item Compare reconstruction and mse pre
+\item Compare reconstruction and mse post
+\end{itemize}
+
+
+
+\section{Conclusion} \label{sec:conclusion}
+TODO: Conclusion
+
+\bibliographystyle{apalike}
+\bibliography{spca_gdpca_refs}
+
+\end{document}
