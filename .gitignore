@@ -1,6 +1,14 @@
 .ipynb_checkpoints
+*.swp
+
 *.mp4
 *.zip
 hires_figures/
 frames/
 
+# latex
+*.aux
+*.blg
+*.log
+*.out
+*.synctex.gz

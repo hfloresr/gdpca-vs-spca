@@ -55,11 +55,8 @@ TODO: Intro
 Here we can talk about dimensionality reduction for LFP signals and the proposed methods of SPCA and GDPCA. Here we can introduce that we are comparing SPCA vs different lags of GDPCA.
 
 
-\subsection{SPCA} \label{sec:spca}
-\begin{itemize}
-\item Breif description of SPCA and reference to paper
-\item Factors of SPCA with LFP superimposed
-\end{itemize}
+\subsection{Spectral Principal Component Analysis} \label{sec:spca}
+High dimensionality of observed LFP data complicates the process of signal interpretation. Many methods were developed to make the exploratory analysis of high dimensional data feasible. One of these methods is Principal Component Analysis (PCA) that was first introduced by Pearson in 1901 and is frequently referred to as conventional Principal Component Analysis.  Although the rise and falls in neuronal membrane potentials occur very rapidly, when the sampling rate is high enough to capture the change in membrane potentials (i.e at millisecond scale), there might exist some phase shifts in time between different channels. Conventional PCA ignores the lead-lag structure of the time series by producing the factors which are instantaneous (contemporaneous) linear mixture of the signal. It also does not require much computational resources since only the covariance matrix of zero lag must be decomposed. However, because the temporal dynamics of time series is ignored, the original signal might be completely canceled out. From the time when conventional PCA was first described, many alternative versions that were found to have a better performance for particular types of data were proposed. One of these techniques for dimensionality reduction of time series data is Spectral Principal Component Analysis (SPCA) that was first introduced in (Brillinger). According to (Wang et al.), SPCA considers the lead-lag structure of the time series by using the linear filter of the time series. They also present simulation results where SPCA showed better performance over the conventional PCA when there was a time shift in some electrodes. As discussed in (SPCA paper), spectral principal component $\mathbf{f}(t)$ is a linear convolution of all time series $\mathbf{z}(t) \in \mathbb{R}^{n}$ and reconstructed time series $\mathbf{\hat{z}}(t)$ is a linear convolution of principal component $\mathbf{f}(t) \in \mathbb{R}^{m}$, where $\mathit{n}$ and $\mathit{m}$ ($\mathit{m<n}$) are the dimensions of original space of time series and lower dimensional space of principal component, respectively. 
 
 
 
