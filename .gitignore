@@ -3,8 +3,11 @@
 
 *.mp4
 *.zip
+*.png
 hires_figures/
 frames/
+figures/
+figs/
 
 # latex
 *.aux
