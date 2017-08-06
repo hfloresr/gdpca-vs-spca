@@ -46,7 +46,7 @@ TODO: Abstract
 
 
 \newpage
-\spacingset{2} % DON'T change the spacing!
+\spacingset{2} % Double space
 \section{Introduction} \label{sec:intro}
 TODO: Intro
 
@@ -59,8 +59,10 @@ Here we can talk about dimensionality reduction for LFP signals and the proposed
 High dimensionality of observed LFP data complicates the process of signal interpretation. Many methods were developed to make the exploratory analysis of high dimensional data feasible. One of these methods is Principal Component Analysis (PCA) that was first introduced by Pearson in 1901 and is frequently referred to as conventional Principal Component Analysis.  Although the rise and falls in neuronal membrane potentials occur very rapidly, when the sampling rate is high enough to capture the change in membrane potentials (i.e at millisecond scale), there might exist some phase shifts in time between different channels. Conventional PCA ignores the lead-lag structure of the time series by producing the factors which are instantaneous (contemporaneous) linear mixture of the signal. It also does not require much computational resources since only the covariance matrix of zero lag must be decomposed. However, because the temporal dynamics of time series is ignored, the original signal might be completely canceled out. From the time when conventional PCA was first described, many alternative versions that were found to have a better performance for particular types of data were proposed. One of these techniques for dimensionality reduction of time series data is Spectral Principal Component Analysis (SPCA) that was first introduced in (Brillinger). According to (Wang et al.), SPCA considers the lead-lag structure of the time series by using the linear filter of the time series. They also present simulation results where SPCA showed better performance over the conventional PCA when there was a time shift in some electrodes. As discussed in (SPCA paper), spectral principal component $\mathbf{f}(t)$ is a linear convolution of all time series $\mathbf{z}(t) \in \mathbb{R}^{n}$ and reconstructed time series $\mathbf{\hat{z}}(t)$ is a linear convolution of principal component $\mathbf{f}(t) \in \mathbb{R}^{m}$, where $\mathit{n}$ and $\mathit{m}$ ($\mathit{m<n}$) are the dimensions of original space of time series and lower dimensional space of principal component, respectively. 
 
 
+\subsection{Generalized Dynamic Principal Components for Brain Signals} \label{sec:gdpc}
+In comparison to SPCA, we also propose utilizing a generalized approach for obtaining signal summaries. The generalized dynamic principal components (GDPC) procedure, proposed by~\cite{pena} differs from SPCA as it does not assume any given model and it does not assume a fixed number of factors. In GDPC, there does not need to be a linear or stationary combination of the data, which may better capture nonstationary behavior of our rat brain signals. In this work, the factors are chosen such that the dynamic principal components are optimal in the reconstruction of the original series, where the reconstructed series is optimal with the mean square error (MSE) criterion.
 
-\subsection{GDPCA} \label{sec:gdpca}
+
 \begin{itemize}
 \item  Description of GDPCA and reference to paper
 \item Factors of GDPCA with LFP superimposed

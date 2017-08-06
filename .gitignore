@@ -15,3 +15,5 @@ figs/
 *.log
 *.out
 *.synctex.gz
+*.dvi
+*.bbl
