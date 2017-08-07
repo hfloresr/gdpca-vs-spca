@@ -1,6 +1,11 @@
 .ipynb_checkpoints
 *.swp
 
+data/
+*.mat
+*.Rdmpd
+*.csv
+
 *.mp4
 *.zip
 *.png
