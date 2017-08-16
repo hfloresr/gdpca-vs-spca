@@ -6,6 +6,8 @@ data/
 *.Rdmpd
 *.csv
 
+backup/
+
 *.mp4
 *.zip
 *.png
