@@ -5,6 +5,7 @@ data/
 *.mat
 *.Rdmpd
 *.csv
+*.tar.gz
 
 backup/
 
